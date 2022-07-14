@@ -1,7 +1,7 @@
 name: Release Management
 
 on:
-  release:
+  workflow_dispatch:
     inputs:
       name:
         type: choice
@@ -15,7 +15,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Send greeting
       run: echo "${{ github.event.inputs.message }} ${{ github.event.inputs.name }}"

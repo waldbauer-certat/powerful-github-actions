@@ -11,8 +11,6 @@ on:
         - sebastian
       message:
         required: true
-      environment:
-        type: environment
 
 jobs:
   greet:
